@@ -8,107 +8,151 @@ import layout1 from "../assets/images/04-layout1.png";
 import layout2 from "../assets/images/04-layout2.png";
 import layout3 from "../assets/images/04-layout3.png";
 import layout4 from "../assets/images/04-layout4.png";
+const {titel, description, ogtitel, ogdescription, schemamarkup} = Astro.props
 ---
-<MainLayout title="Titel">
+
+<MainLayout 
+title=""
+description="Dette er en tips plakatvæg side, hvor du kan få gode ideer til plakater og vægdesign."
+ogtitel=" Historien om Blues "
+ogdescription="Dette er en tips plakatvæg side, hvor du kan få gode ideer til plakater og vægdesign." 
+>
+
+
+
 	<article class="grid mx-auto container gap-8 pt-8 prose">
-        <h1>Fire gode steps til at sammensætte en plakatvæg</h1>
+        <h1>Historien om Blues</h1>
 
 
-        <h2>1) Overvej hvordan farverne passer sammen</h2>
+        <h2>1.	Blues’ Oprindelse <br> (Sene 1800-tallet – Starten af 1900-tallet)</h2>
 
-        <p>Overvej hvilket udtryk du gerne vil udtrykke med din plakatvæg. Skal det være ren sort/hvid plakat væg? Eller
-            en blanding af sort/hvid plakater og få plakater med farver? Det kan også være en samling af plakater i
-            samme farvetoner eller en vild farvelade med mange farver.</p>
+        <p>Blues har rødder i afrikansk folkemusik, spirituals, work songs og field hollers, som stammer fra den tidlige slavetiden i USA. </p>
+        <p>Den tidligste form for blues kom til, tilbage i 1800 tallets og udsprang fra primært i det sydlige USA, især i Mississippi-deltaet, blandt afroamerikanske samfund. Tidlige bluesmusikere var ofte arbejdere, der udtrykte deres oplevelser af fattigdom, uretfærdighed og kærlighed, med enkel instrumentering som banjo eller guitar. </p>
+        <p>Helt tidlige bluesmusik blev kendetegnet ved en simpel 12-takters struktur og brugen af blue notes (toner, der er lidt lavere end de standardtoner, vi kender i vestlig musik). </p>
 
-        <ul>
-            <li>Vær bevidst om hvilke farver du sammensætter til plakatvæggen.</li>
-            <li>Når man beslutter sig for farvertoner til plakatvæggen kan det også være kan det være en god ide at
-                kigge på de omgivelser vægen er en sammenhæng med.</li>
-        </ul>
-
-        <Image src={farver} alt="" />
+          <img src="/src/assets/images/1.jpg" alt="mand spiller trompet i solnedgang" class="" />
 
         <hr>
 
-        <h2> 2) Hvilke motiver skal hænges på væggen?</h2>
+        <h2> 2.	De første udgivelser og udbredelsens <br> (1910'erne - 1920'erne)</h2>
 
         <p>
-            Ligesom farverne er motiverne på plakaterne også med til at skabe et bestemt udtryk. Skal de være ensartede
-            eller skal der være kontraster når øjet ser væggen? Og kan nogle motiver være med til at skabe en
-            overraskelse
-            når man betragter væggen.
+           I 1912 udgav W.C. Handy ”Memphis Blues”, og blev her den allerførste blueskomposition udgivet. Dette betød startskuddet på den moderne form for blues. Den første udgivelse, markerede således også starten, på den første rigtige udbredelsen af bluesmusikken, og hjalp til at genre blev kendt udover lokalområderne og starten på kommercialiseret
         </p>
 
         <ul>
-            <li>Hvis man har mange forskellige motiver kan det være en god ide at gruppere, så nogle af billederne taler
-                sammen.</li>
-            <li>Det kan også være en god ide at sammensætte motiver med stor kontrast, da de på den måde kan fremhæve
-                hinanden.</li>
+            <li>Handy blev kendt som ”Father of the Blues”</li>
+            <li>Ma Rainey, den første professionelle bluesperformere, og blev herefter kendt som ”Mother og the Blues”</li>
         </ul>
 
-        <Image src={motiver} alt="" />
+      <img src="/src/assets/images/2.jpg" alt="spilleplader til salg" class="" />
 
         <hr>
 
-        <h2>3) Motiver i forskellige størrelser og formater</h2>
+        <h2>3.	Blues udvikling og forgrening <br> (1920'erne - 1930'erne) </h2>
 
         <p>
-            Overvej hvilken størrelse billeder du skal bruge til din væg. Er der mange forskellige formater der skal
-            passes
-            ind i layoutet eller vil du have præcis de samme to formater?
+             I løbet af 1920’erne til 30’erne, gennemgik blues en ny udvikling. 
+             For i Mississippi-deltaet udviklede en særlig stil sig. Dette var Delta Blues, 
+             denne stil var mere rå, følelsesmæssig og ofte præget af akustisk guitar. 
         </p>
 
-        <p>
-            Flere formater og både bred og højformat skaber ofte et dynamisk udtryk, der kan være spændende at gå på
-            opdagelse i. Udfordringen med denne slags layout er at det ofte bliver meget rodet, og derfor kan det være
-            en
-            fordel at følge nogle principper der kan hjælpe med at skabe ro. Det kan også være indbydende for øjet bare
-            at
-            gentage den samme størrelse, - på den måde kan motivet også komme mere til sin ret.
-        </p>
         <ul>
-            <li>Udvælg formater til din billedvæg. både plakater i forskellige størrelser, høj- og bred-format</li>
-            <li>Vælger man at gentage det samme format kan man eks. bryde layoutet ved at tage et eller to billeder ud.
-            </li>
+            <li> Delta blusen, opstod som en helt unik stil, og var i langt højere grad præget af slidte stemmer fingerpicking guitarstil. </li>
+            <li>   Denne stil af blusen blev senere basis for mange andre former for blues og rockmusik. </li>
         </ul>
-        <Image src={strl} alt="" />
+      
+
+        <img src="/src/assets/images/3.jpg" alt="mand spiller gitar" class="" />
 
         <hr>
-        <h2>4) Layout af en spændende billedvæg</h2>
+        <h2>4.	Bluesens Popularisering <br>
+            (1930'erne – 1940'erne)</h2>
 
         <p>
-            At layoute en billedvæg med flere billeder er en svær øvelse. Er der er mange eller få billeder? Hvilke
-            farver,
-            hvilke motiver og hvilke størrelser skal sættes sammen som en enhed?
+          I denne periode begyndte, og især under krigstiden, flyttede mange afroamerikanere fra sydstaten til 
+          de mere nordlige industribyer, her af især Chicago og Detroit, som betød at blues fandt sin vej til 
+          flere og flere storbyer i Nordamerika.
         </p>
 
         <p>
-            Man kan bruge forskellige metoder til at skabe et fedt udtryk. Her er nogle du kan overveje at bruge hvis du
-            har
-            mange billeder. Hvis du har billederne i fysisk form, så start med at lave layoutet på gulvet, stil dig op
-            på en
-            stol og tag et billede når du er tilfreds med første udkast. Lav denne øvelser et par gange før du begynder
-            at
-            hænge dem op på væggen.
+            Således førte det også til at blues fik en elektrificering og urbanisering af bluesmusik.
+            Dette førte til at blues at blive mere og mere udviklet, i form af tilføjelse af bas, trommer og 
+            elektrisk guitar. og fandt vej til flere storbyerne i Nordamerika. Dette banede vejen for urban blues og rhythm and blues (R&B).
         </p>
 
-        <ul>
-            <li>Anvend linjer der flugter på forskellige måder.</li>
-            <li>Arbejd med at have den samme afstand mellem rammerne. Kan man have den sammen afstand giver det ro.</li>
-            <li>
-                Man kan også arbejde med at placere billederne lidt abstrakt på væggen. Det kan skabe et mere livligt og
-                overraskende look.
-            </li>
-        </ul>
 
         <div class="grid grid-cols-2 gap-4">
 
-			<Image src={layout1} alt="" />
-            <Image src={layout2} alt="" />
-            <Image src={layout3} alt="" />
-            <Image src={layout4} alt="" />
+			 <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
+             <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
+            <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
+            <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
 
         </div>
+        <hr>
+
+        <h2>5.	Efterkrigstidens & Indflydelse på Rock 'n' Rol <br> (1950'erne – 1960'erne)</h2>
+
+        <p>
+            I 1950'erne begyndte blues at fusionere med andre genrer og påvirke 
+            rock 'n' roll, hvilket gjorde den til en afgørende del af populærkulturen. 
+            Samtidig opstod Rhythm and Blues (R&B) som en moderne og dansbar version af blues. 
+            Her spillede bl.a. musikeren Elvis Presley en rolle, selvom han ikke var bluesmusiker, 
+            integrerede han en hel del blues i sin musik og hjalp med at popularisere genren globalt.
+        </p>
+
+        <p>
+           Hertil var der også andre vigtige frontfigur som spille ind i udviklingen og udbredelsen af 
+           genren og dens påvirkning af Rock ’n’ Rol
+        </p>
+        <ul>
+            <li>Chuck Berry: Bluesens indflydelse på rock 'n' roll er tydelig hos musikere som Chuck Berry, 
+                der tog bluesens struktur og kombinerede den med energien fra tidlig rockmusik.</li>
+            <li>B.B. King: En af de mest kendte og indflydelsesrige bluesmusikere, kendt for sin unikke guitarstil 
+                og sange som "The Thrill is Gone". Han spillede en stor rolle i at bringe bluesen til et bredere publikum i denne periode.
+            </li>
+        </ul>
+        <img src="/src/assets/images/5.jpg" alt="mand sidder på stol, med en læderjakke på" class="" />
+
+        <hr>
+
+        <h2>6.	Bluesens Genopblussen og Global Indflydelse <br> (1960'erne – 1970'erne)</h2>
+
+        <p>
+         Blues blev i 60’erne og 70’erne genopdaget og adopteret af britiske rockbands, som derefter 
+         introducerede den til et nyt globalt publikum. Det var især i England, at bluesen fik et massivt 
+         comeback, og mange store rockbands blev inspireret af den klassiske blues.
+        </p>
+
+           <ul>
+            <p> De største frontfigurer i udbredelsen var her især at finde hos </p>
+            <li>The Rolling Stones – inspirerede af bluesmusikere som Muddy Waters og Howlin' Wolf.</li>
+            <li>Eric Clapton – berømt for sin guitarstil og store bluesindflydelse </li>
+        </ul>
+
+        <p>
+        Blues genopblussen, fik især også stor påvirkning fra kendte begivenheder som Newport Folk Festival, der 
+        hjalp med at genoplive interessen for traditionelle bluesmusikere som Muddy Waters og Son House.
+        Jimi Hendrix: Som en innovator, der kombinerede blues med rock,
+        psykedelisk musik og soul, fortsatte Hendrix med at udvide bluesens grænser.
+        </p>
+
+      <img src="/src/assets/images/6.jpg" alt="mand spiller gitar " class="" />
+
+        <hr>
+
+        <h2>7.	Bluesens Rolle i Moderne Musik (1970'erne – nu)</h2>
+
+        <p>
+           Blues fortsatte stadig med at udvikle sig og inspirere musikere rundt omkring i verden. 
+           Dens påvirke er stadig fremtræden og smelter sammen med andre genrer som rock, funk og soul. 
+           Den er forblevet en grundsten i mange musikeres stil og inspiration til nye generationer nu og i fremtiden.
+        </p>
+
+
+      <img src="/src/assets/images/7.jpg" alt="mand spiller trommer med hørertelefoner" class="" />
+
         <hr>
 
     </article>

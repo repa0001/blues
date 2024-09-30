@@ -5,14 +5,24 @@ import '../styles/tailwind.css';
 import 'animate.css';
 const { title } = Astro.props;
 ---
-<html lang="en">
+<html lang="da">
 	<head>
+
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{Astro.props.title}</title>
+		<title>{Astro.props.title} Historien om Blues </title>
+
+
 		<!-- meta description mm. ind her... -->
+
+		 <meta property="og:description" content="Dette er en tips plakatvæg side, hvor du kan få gode ideer til plakater og vægdesign." />
+		 <meta property="og:local" content="da_DK" />
+		 <meta property="og:type" content="website" />
+		<meta property="og:titel" content={Astro.props.ogdescription} />
+
+
 	</head>
 	<body>
 
