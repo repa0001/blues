@@ -5,9 +5,13 @@ import farver from "../assets/images/01-farver.png";
 import motiver from "../assets/images/02-motiver.png";
 import strl from "../assets/images/03-strl.png";
 import photo1 from "../assets/images/photo1.jpg";
-import layout2 from "../assets/images/04-layout2.png";
-import layout3 from "../assets/images/04-layout3.png";
-import layout4 from "../assets/images/04-layout4.png";
+import photo2 from "../assets/images/photo1.jpg";
+import photo3 from "../assets/images/photo1.jpg";
+import photo4 from "../assets/images/photo1.jpg";
+import photo5 from "../assets/images/photo1.jpg";
+import photo6 from "../assets/images/photo1.jpg";
+import photo7 from "../assets/images/photo1.jpg";
+
 const {titel, description, ogtitel, ogdescription, schemamarkup} = Astro.props
 ---
 
@@ -46,7 +50,8 @@ ogdescription="Dette er en tips plakatvæg side, hvor du kan få gode ideer til 
             <li>Ma Rainey, den første professionelle bluesperformere, og blev herefter kendt som ”Mother og the Blues”</li>
         </ul>
 
-      <img src="/src/assets/images/2.jpg" alt="spilleplader til salg" class="" />
+    
+       <Image class="" src={photo2} alt="spilleplader til salg"></Image>
 
         <hr>
 
@@ -64,7 +69,8 @@ ogdescription="Dette er en tips plakatvæg side, hvor du kan få gode ideer til 
         </ul>
       
 
-        <img src="/src/assets/images/3.jpg" alt="mand spiller gitar" class="" />
+    
+               <Image class="" src={photo2} alt="mand spiller gitar"></Image>
 
         <hr>
         <h2>4.	Bluesens Popularisering <br>
@@ -85,10 +91,11 @@ ogdescription="Dette er en tips plakatvæg side, hvor du kan få gode ideer til 
 
         <div class="grid grid-cols-2 gap-4">
 
-			 <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
-             <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
-            <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
-            <img src="/src/assets/images/4.jpg" alt="stars and stripes" class="" />
+		       <Image class="" src={photo4} alt="stars and stripes"></Image>
+		       <Image class="" src={photo4} alt="stars and stripes"></Image>
+		       <Image class="" src={photo4} alt="stars and stripes"></Image>
+		       <Image class="" src={photo4} alt="stars and stripes"></Image>
+        
 
         </div>
         <hr>
@@ -114,7 +121,8 @@ ogdescription="Dette er en tips plakatvæg side, hvor du kan få gode ideer til 
                 og sange som "The Thrill is Gone". Han spillede en stor rolle i at bringe bluesen til et bredere publikum i denne periode.
             </li>
         </ul>
-        <img src="/src/assets/images/5.jpg" alt="mand sidder på stol, med en læderjakke på" class="" />
+       
+               <Image class="" src={photo2} alt="mand sidder på stol, med en læderjakke på"></Image>
 
         <hr>
 
@@ -139,7 +147,7 @@ ogdescription="Dette er en tips plakatvæg side, hvor du kan få gode ideer til 
         psykedelisk musik og soul, fortsatte Hendrix med at udvide bluesens grænser.
         </p>
 
-      <img src="/src/assets/images/6.jpg" alt="mand spiller gitar " class="" />
+             <Image class="" src={photo2} alt="mand spiller gitar"></Image>
 
         <hr>
 
@@ -152,7 +160,7 @@ ogdescription="Dette er en tips plakatvæg side, hvor du kan få gode ideer til 
         </p>
 
 
-      <img src="/src/assets/images/7.jpg" alt="mand spiller trommer med hørertelefoner" class="" />
+       <Image class="" src={photo2} alt="mand spiller trommer med hørertelefoner"></Image>
 
         <hr>
 
